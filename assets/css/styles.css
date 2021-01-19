@@ -79,7 +79,6 @@ img {
 	max-width: 100%;
 	height: auto;
 	display: block;
-	z-index: -99999;
 }
 /*CLASS CSS*/
 .section {
@@ -116,7 +115,8 @@ img {
 	left: 0;
 	z-index: var(--z-index);
 	background-color: var(--first-color-lighten);
-	box-shadow: 0 2px 4px rgba(0,0,0,.1)
+	box-shadow: 0 2px 4px rgba(0,0,0,.1);
+	z-index: 99999;
 }
 /* NAV */
 .nav {
@@ -212,7 +212,7 @@ img {
 }
 .home__social {
 	margin-bottom: 5rem;
-	z-index: -99;
+	/*z-index: -99;*/
 }
 .home__social-link {
 	display: inline-flex;
@@ -345,11 +345,11 @@ img {
 /* EDUCATION */
 .education__container {
 	row-gap: 2rem;
+	z-index: -99999;
 }
 .education__content {
 	display: grid;
 	grid-template-columns: 1fr max-content 1fr;
-	z-index: -99999;
 }
 .education__year, .education__race {
 	font-size: var(--h3-font-size);
