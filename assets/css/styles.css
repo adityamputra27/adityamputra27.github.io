@@ -432,6 +432,7 @@ img {
 	border-radius: .5rem;
 	/* text-align: center; */
 	background-color: #F6F6F8;
+	text-align: center;
 }
 .services__icon {
 	font-size: 2rem;
