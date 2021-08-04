@@ -65,6 +65,8 @@ body {
 	background-color: #ffffff; 
 	/* color: var(--text-color); */
 	line-height: 1.6;
+	width: 100%;
+	overflow-x: hidden;
 }
 h1,h2,h3,p {
 	margin: 0;
