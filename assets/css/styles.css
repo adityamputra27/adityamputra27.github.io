@@ -551,8 +551,8 @@ img {
 	color: var(--first-color-light);
 }
 .works__discover {
-	margin: 2em 0 2em 0;
-	text-align: center !important;
+	margin: 4rem 2rem 1rem 2rem;
+	text-align: center;
 }
 .works__button {
 	width: 100%;
