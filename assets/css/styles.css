@@ -240,7 +240,7 @@ img {
 .home__social-link:hover {
 	background-color: var(--hover-button);
 }
-.home__button {
+.home__button, .works__button {
 	width: 100%;
 	animation: bounce 1s infinite alternate;
 }
@@ -545,6 +545,15 @@ img {
 .works__img:hover .works__data {
 	bottom: 0;
 }
+.works__icon__info {
+	font-size: 1em;
+	padding-left: 0.5em;
+	color: var(--first-color-light);
+}
+.works__button {
+	width: 100%;
+	animation: bounce 1s infinite alternate;
+}
 /* CONTACCT */
 .contact__container {
 	row-gap: 3rem;
@@ -630,7 +639,7 @@ img {
 }
 /* media query */
 @media screen and (min-width:768px) {
-	.home__button {
+	.home__button, .works__button {
 		width: initial;
 	}
 	.nav__menu {
