@@ -550,6 +550,10 @@ img {
 	padding-left: 0.5em;
 	color: var(--first-color-light);
 }
+.works__discover {
+	margin: 2em 0 2em 0;
+	text-align: center !important;
+}
 .works__button {
 	width: 100%;
 	animation: bounce 1s infinite alternate;
