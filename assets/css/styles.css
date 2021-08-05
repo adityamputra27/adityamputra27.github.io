@@ -677,7 +677,7 @@ img {
 	border-radius: .5rem;
 	transition: .5s;
 	color: var(--first-color-lighten);
-	margin: 1rem 0 0 0;
+	margin: 2rem 0 0 0;
 }
 .close:hover {
 	background-color: var(--hover-button);
@@ -685,19 +685,22 @@ img {
 .modal {
 	background-color: var(--first-color-lighten);
 	padding: 30px 50px;
-	width: 500px;
+	width: 600px;
 	max-width: 100%;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 	text-align: center;
 }
 .modal h1 {
-	margin: 0;
+	margin: 0 0 1.5rem 0;
 }
 .modal p {
 	font-size: 14px;
 	opacity: 0.7;
 	margin: 0.5rem 0 0.5rem 0;
+}
+.project__picture {
+	margin-bottom: 1.5rem;
 }
 /* End Modal */
 /* media query */
