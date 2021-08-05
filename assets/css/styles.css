@@ -162,12 +162,19 @@ img {
 	text-transform: uppercase;
 	color: var(--first-color-lighten);
 	font-weight: var(--font-bold);
-	transition: .3s;
+	text-decoration: none;
+	display: inline-block;
 }
-.nav__link:hover {
-	/*color: var(--text-color);*/
-	border-bottom: 1px solid var(--first-color-lighten);
-	transition: .10s ease-out;
+.nav__link::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 2px;
+	background: var(--first-color-lighten);
+	transition: width .3s;
+}
+.nav__link:hover::after {
+	width: 100%;
 }
 .nav__toggle {
 	color: var(--first-color-lighten);
