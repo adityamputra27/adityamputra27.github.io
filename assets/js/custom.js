@@ -37,3 +37,7 @@ function scrollActive() {
 }
 // INIT AOS
 AOS.init();
+
+// Modal JS
+
+
