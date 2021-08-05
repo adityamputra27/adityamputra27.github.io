@@ -699,8 +699,35 @@ img {
 	opacity: 0.7;
 	margin: 0.5rem 0 0.5rem 0;
 }
-.project__picture {
+.projects__picture {
 	margin-bottom: 1.5rem;
+	width: 100%;
+	overflow: hidden;
+}
+.projects__slide {
+	display: flex;
+	width: 100%;
+}
+#prevBtn, #nextBtn {
+	border: 5px solid var(--first-color-lighten);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: var(--first-color);
+	color: var(--first-color-lighten);
+	cursor: pointer;
+	position: absolute;
+	top: 42%;
+	z-index: 99;
+}
+#prevBtn:hover, #nextBtn:hover {
+	background-color: var(--hover-button);
+}
+#prevBtn {
+	left: 30%;
+}
+#nextBtn {
+	right: 30%;
 }
 /* End Modal */
 /* media query */
