@@ -685,7 +685,7 @@ img {
 .modal {
 	background-color: var(--first-color-lighten);
 	padding: 30px 50px;
-	min-width: 600px;
+	width: 500px;
 	max-width: 100%;
 	border-radius: 5px;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
@@ -701,6 +701,30 @@ img {
 }
 /* End Modal */
 /* media query */
+@media only screen and (max-width: 400px) {
+	.modal {
+		width: 380px;
+	}
+	.modal h1 {
+		font-size: 26px;
+	}
+	.close {
+		padding: 8px 20px;
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.modal {
+		width: 460px;
+	}
+	.modal h1 {
+		font-size: 30px;
+	}
+	.close {
+		padding: 10px 22px;
+		font-size: 14px;
+	}
+}
 @media screen and (min-width:768px) {
 	.home__button, .works__button {
 		width: initial;
