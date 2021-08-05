@@ -701,16 +701,16 @@ img {
 }
 /* End Modal */
 /* media query */
-@media only screen and (max-width: 400px) {
+@media screen and (max-width: 400px) {
 	.modal {
-		width: 380px;
+		width: 380px !important;
 	}
 	.modal h1 {
-		font-size: 26px;
+		font-size: 26px !important;
 	}
 	.close {
-		padding: 8px 20px;
-		font-size: 12px;
+		padding: 8px 20px !important;
+		font-size: 12px !important;
 	}
 }
 @media screen and (max-width: 500px) {
