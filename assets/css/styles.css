@@ -653,6 +653,11 @@ img {
 	width: 100vw;
 	opacity: 0;
 	pointer-events: none;
+	transition: opacity 0.3s ease;
+}
+.modal-container.show {
+	opacity: 1;
+	pointer-events: auto;
 }
 .close {
 	border: 0;

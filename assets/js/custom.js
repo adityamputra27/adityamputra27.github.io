@@ -40,4 +40,14 @@ AOS.init();
 
 // Modal JS
 
+const modal__container = document.querySelector('#modal__container')
+const open__modal = document.querySelector('.open__modal')
+const close = document.querySelector('.close')
 
+open__modal.addEventListener('click', () => {
+    modal__container.classList.add('show')
+})
+
+close.addEventListener('click', () => {
+    modal__container.classList.remove('show')
+})
