@@ -743,16 +743,15 @@ img {
 		font-size: 12px !important;
 	}
 	#prevBtn, #nextBtn {
-		transform: translateY(-25%);
 		width: 35px;
 		height: 35px;
 		border: 4px solid var(--first-color-lighten);
 	}
 	#prevBtn {
-		left: 10%;
+		left: 12%;
 	}
 	#nextBtn {
-		right: 10%;
+		right: 12%;
 	}
 }
 @media screen and (max-width: 500px) {
