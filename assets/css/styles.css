@@ -821,7 +821,7 @@ img {
 		border-radius: .5rem;
 	}
 	.modal {
-		width: 380px !important;
+		width: 0px !important;
 	}
 	.modal h1 {
 		font-size: 24px !important;
