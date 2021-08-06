@@ -65,7 +65,6 @@ body {
 	background-color: #ffffff; 
 	/* color: var(--text-color); */
 	line-height: 1.6;
-	/* overflow-x: hidden; */
 }
 h1,h2,h3,p {
 	margin: 0;
@@ -491,6 +490,7 @@ img {
 .project {
 	background-color: var(--first-color);
 	padding-bottom: 0;
+	overflow-x: hidden;
 }
 .project__container {
 	row-gap: 2rem;
