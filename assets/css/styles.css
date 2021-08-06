@@ -743,7 +743,7 @@ img {
 		font-size: 12px !important;
 	}
 }
-@media screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
 	.modal {
 		width: 460px;
 	}
