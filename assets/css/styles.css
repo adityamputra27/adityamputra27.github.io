@@ -743,7 +743,6 @@ img {
 		font-size: 12px !important;
 	}
 	#prevBtn, #nextBtn {
-		/* top: 42%; */
 		transform: translateY(-25%);
 		width: 35px;
 		height: 35px;
