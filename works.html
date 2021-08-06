@@ -56,32 +56,8 @@
 			<h2 class="section-title" data-aos="fade-up" data-aos-delay="500">Recent Works</h2>
 
 			<div class="works__container bd-grid">
-				<div class="works__img" data-aos="fade-in" data-aos-delay="800" data-aos-duration="800">
-					<img src="https://cdn1-production-images-kly.akamaized.net/GVgUU_SxlV0i_IEMUSoZQGJTI4U=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2735401/original/083839100_1550814009-HL.jpg" alt="">
 
-					<div class="works__data open__modal">
-						<a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-						<span class="works__title">Work 1</span>
-					</div>
-				</div>
-
-				<div class="works__img" data-aos="fade-in" data-aos-delay="1000" data-aos-duration="800">
-					<img src="https://cdn1-production-images-kly.akamaized.net/GVgUU_SxlV0i_IEMUSoZQGJTI4U=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2735401/original/083839100_1550814009-HL.jpg" alt="">
-				
-					<div class="works__data open__modal">
-						<a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-						<span class="works__title">Work 2</span>
-					</div>
-				</div>
-
-				<div class="works__img" data-aos="fade-in" data-aos-delay="1200" data-aos-duration="800">
-					<img src="https://cdn1-production-images-kly.akamaized.net/GVgUU_SxlV0i_IEMUSoZQGJTI4U=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2735401/original/083839100_1550814009-HL.jpg" alt="">
-				
-					<div class="works__data open__modal">
-						<a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
-						<span class="works__title">Work 3</span>
-					</div>
-				</div>
+				<!-- Content Works -->
 	
 			</div>
 
@@ -96,7 +72,7 @@
 		<!-- Modal -->
 		<div class="modal-container" id="modal__container">
 			<div class="modal">
-				<h1>Aplikasi Tracking COVID-19</h1>
+				<h1 class="modal-title"></h1>
 				<div class="modal-content">
 					<div class="projects__container bg-grid">
 						<button id="prevBtn"><i class="fa fa-chevron-left"></i></button>
@@ -111,9 +87,9 @@
 						<div class="projects__detail">
 							<table>
 								<tr>
-									<th>Techology</th>
+									<th>Technology</th>
 									<th>:</th>
-									<td>Laravel, React JS, Tailwind CSS, Redux</td>
+									<td><span class="technology-name"></span></td>
 								</tr>
 							</table>
 						</div>
@@ -127,58 +103,22 @@
 	 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	 <script src="assets/js/custom.js"></script>
 	 <script>
-		 // Modal JS
+		
+		// console.log(open__modal)
+		// let openModal = Array.prototype.map.call(open__modal, element => {
+		// 	return element.value
+		// })
+		// let modalFunction = function() {
+		// 	alert('TEST')
+		// }
+		// open__modal.addEventListener('click', function () {
+		// 	modal__container.classList.add('show')
+		// })
 
-		const modal__container = document.querySelector('#modal__container')
-		const open__modal = document.querySelector('.open__modal')
-		const close = document.querySelector('.close')
+		// Array.from(open__modal).forEach((e, i) => {
+		// 	e.addEventListener('click', modalFunction)
+		// })
 
-		open__modal.addEventListener('click', () => {
-			modal__container.classList.add('show')
-		})
-
-		close.addEventListener('click', () => {
-			modal__container.classList.remove('show')
-		})
-
-		// Carouselnya
-		const projectsSlide = document.querySelector('.projects__slide')
-		const projectsImages = document.querySelectorAll('.projects__slide img')
-
-		// Tombol prev dan next
-		const prevBtn = document.querySelector('#prevBtn')
-		const nextBtn = document.querySelector('#nextBtn')
-
-		// Buat counter untuk slides nya
-		let counter = 1
-		const size = projectsImages[0].clientWidth
-		projectsSlide.style.transform = 'translateX('+ (-size * counter) +'px)'
-
-		prevBtn.addEventListener('click', function () {
-			projectsSlide.style.transition = "transform 0.5s ease-in"
-			counter--
-			projectsSlide.style.transform = 'translateX('+ (-size * counter) +'px)'
-		})
-		nextBtn.addEventListener('click', function () {
-			// console.log(-size)
-			// alert('TES')
-			projectsSlide.style.transition = "transform 0.5s ease-in"
-			counter++
-			projectsSlide.style.transform = 'translateX('+ (-size * counter) +'px)'
-		})
-		projectsSlide.addEventListener('transitionend', function () {
-			console.log(projectsImages[counter].id)
-			if (projectsImages[counter].id === "firstSlide") {
-				prevBtn.style.display = 'none'
-			} else {
-				prevBtn.style.display = 'block'
-			}
-			if (projectsImages[counter].id === "lastSlide") {
-				nextBtn.style.display = 'none'
-			} else {
-				nextBtn.style.display = 'block'
-			}
-		})
 	 </script>
 </body>
 </html>

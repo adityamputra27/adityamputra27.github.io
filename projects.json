@@ -1,0 +1,361 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "project_name": "Aplikasi Tracking COVID-19",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "HTML, CSS, Bootstrap, Laravel, Jquery",
+            "figma_link": "-",
+            "information": ""
+        },
+        {
+            "id": 2,
+            "project_name": "Aplikasi Pengaduan Masyarakat",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "HTML, CSS, Bootstrap, Laravel, JQuery, Ajax, DOMPDF, Maatwebsite (Excel)",
+            "figma_link": "",
+            "information": ""
+        },
+        {
+            "id": 3,
+            "project_name": "Website Belajar Koding",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "HTML, CSS, Bootstrap, Laravel, JQuery",
+            "figma_link": "",
+            "information": ""
+        },
+        {
+            "id": 4,
+            "project_name": "Website PT. Cipta Akbar - Kontraktor dan Konsultan Baja",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "Figma, HTML, CSS, JQuery, Laravel",
+            "figma_link": "",
+            "information": ""
+        },
+        {
+            "id": 5,
+            "project_name": "Website Kelurahan Sawah Gede",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "HTML, CSS, PHP Native",
+            "figma_link": "",
+            "information": "Tugas Pemograman WEB Kelas 11 RPL"
+        },
+        {
+            "id": 6,
+            "project_name": "E-Voting",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "Laravel, DOMPDF, Maatwebsite (Excel), AJAX, Chart JS",
+            "figma_link": "",
+            "information": "Aplikasi E-Voting untuk ekstrakulikuler ROHIS"
+        },
+        {
+            "id": 7,
+            "project_name": "Laundry Management App",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "Laravel, JQuery, AJAX, DOMPDF, Maatwebsite (Excel)",
+            "figma_link": "",
+            "information": "Tugas Persiapan UJIKOM Pemograman Web Kelas XII RPL"
+        },
+        {
+            "id": 8,
+            "project_name": "Studio Management",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "HTML, CSS, Laravel, VUE JS",
+            "figma_link": "",
+            "information": ""
+        },
+        {
+            "id": 9,
+            "project_name": "SDM Tania Perfume",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "Codeigniter, JQuery, AJAX, PHPExcel, DOMPDF",
+            "figma_link": "",
+            "information": "Ini adalah projek lama kantor, tetapi saya ditugaskan untuk menambahkan fitur yang sesuai dengan permintaan klien yaitu TANIA PERFUME"
+        },
+        {
+            "id": 10,
+            "project_name": "Point Of Sale",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "HTML, CSS, Laravel, DOMPDF, Maatwebsite (Excel), JQuery, AJAX",
+            "figma_link": "",
+            "information": "Tugas Persiapan UJIKOM Pemograman Web Kelas XII RPL"
+        },
+        {
+            "id": 11,
+            "project_name": "Aplikasi Penjualan & Accounting Toko FRBan",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "HTML, CSS, Codeigniter, JQuery, AJAX, Chart JS, PHPExcel, DOMPDF",
+            "figma_link": "",
+            "information": ""
+        },
+        {
+            "id": 12,
+            "project_name": "Sistem Rekomendasi Jurusan (Front End)",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "Figma, HTML, CSS, Bootstrap",
+            "figma_link": "",
+            "information": "Projek ini ditugaskan oleh teman tempat kerja saya yang akan tugas akhir dan skripsi"
+        },
+        {
+            "id": 13,
+            "project_name": "Aplikasi Klinik GIGI",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": ".NET, C#, Bunifu UI Framework",
+            "figma_link": "",
+            "information": "Tugas Pemograman Desktop Kelas XI RPL"
+        },
+        {
+            "id": 14,
+            "project_name": "Nearskill Academy",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "React JS, Typescript, Redux, Firebase, Figma, Material IO",
+            "figma_link": "",
+            "information": ""
+        },
+        {
+            "id": 15,
+            "project_name": "Ninja FOOD",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "Tailwind CSS",
+            "figma_link": "",
+            "information": ""
+        },
+        {
+            "id": 16,
+            "project_name": "Content Management System",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "Laravel",
+            "figma_link": "",
+            "information": ""
+        },
+        {
+            "id": 17,
+            "project_name": "Asika (Asisten Individu Karyawan)",
+            "images": [
+                {
+                    "no": 1,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 2,
+                    "ss": "assets/images/"
+                },
+                {
+                    "no": 3,
+                    "ss": "assets/images/"
+                }
+            ],
+            "technology": "Microservices Architecture - NodeJS, Golang, Lumen, React JS, Typescript, Docker, Tailwind CSS, JWT, Kong API, Swagger",
+            "figma_link": "",
+            "information": "Madtive Studio Products - Work Team"
+        }
+    ]
+}

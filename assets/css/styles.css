@@ -533,6 +533,7 @@ img {
 	background: rgba(83, 35, 165, 0.6);
 	border-radius: .5rem;
 	transition: .3s;
+	padding: 0 0.8rem 0 0.8rem;
 }
 .works__link {
 	display: inline-flex;
@@ -544,7 +545,8 @@ img {
 	margin-bottom: var(--mb-2);
 }
 .works__title {
-	font-size: var(--h2-font-size);
+	font-size: 1rem;
+	text-align: center;
 	color: var(--first-color-lighten);
 	font-weight: 600;
 }
