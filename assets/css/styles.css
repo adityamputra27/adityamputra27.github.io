@@ -717,7 +717,7 @@ img {
 	color: var(--first-color-lighten);
 	cursor: pointer;
 	position: absolute;
-	top: 42%;
+	top: 42.5%;
 	z-index: 99;
 }
 #prevBtn:hover, #nextBtn:hover {
