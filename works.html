@@ -80,8 +80,6 @@
 						<div class="projects__picture">
 							<div class="projects__slide">
 								<img id="firstSlide" src="https://cdn1-production-images-kly.akamaized.net/GVgUU_SxlV0i_IEMUSoZQGJTI4U=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2735401/original/083839100_1550814009-HL.jpg" alt="">
-								<img src="https://cdn1-production-images-kly.akamaized.net/GVgUU_SxlV0i_IEMUSoZQGJTI4U=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2735401/original/083839100_1550814009-HL.jpg" alt="">
-								<img id="lastSlide" src="https://cdn1-production-images-kly.akamaized.net/GVgUU_SxlV0i_IEMUSoZQGJTI4U=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2735401/original/083839100_1550814009-HL.jpg" alt="">
 							</div>
 						</div>
 						<div class="projects__detail">
@@ -103,22 +101,114 @@
 	 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	 <script src="assets/js/custom.js"></script>
 	 <script>
-		
-		// console.log(open__modal)
-		// let openModal = Array.prototype.map.call(open__modal, element => {
-		// 	return element.value
-		// })
-		// let modalFunction = function() {
-		// 	alert('TEST')
-		// }
-		// open__modal.addEventListener('click', function () {
-		// 	modal__container.classList.add('show')
-		// })
+		 // Carouselnya
+		const projectsSlide = document.querySelector('.projects__slide')
+		const projectsImages = document.querySelectorAll('.projects__slide img')
 
-		// Array.from(open__modal).forEach((e, i) => {
-		// 	e.addEventListener('click', modalFunction)
-		// })
+		// Tombol prev dan next
+		const prevBtn = document.querySelector('#prevBtn')
+		const nextBtn = document.querySelector('#nextBtn')
 
+		// Buat counter untuk slides nya
+		let counter = 1
+		const size = projectsImages[0].clientWidth ?? 0
+		projectsSlide.style.transform = 'translateX('+ (-size * counter) +'px)'
+
+		prevBtn.addEventListener('click', function () {
+			projectsSlide.style.transition = "transform 0.5s ease-in"
+			counter--
+			projectsSlide.style.transform = 'translateX('+ (-size * counter) +'px)'
+		})
+		nextBtn.addEventListener('click', function () {
+			// console.log(-size)
+			// alert('TES')
+			projectsSlide.style.transition = "transform 0.5s ease-in"
+			counter++
+			projectsSlide.style.transform = 'translateX('+ (-size * counter) +'px)'
+		})
+		projectsSlide.addEventListener('transitionend', function () {
+			console.log(projectsImages[counter].id)
+			if (projectsImages[counter].id === "firstSlide") {
+				prevBtn.style.display = 'none'
+			} else {
+				prevBtn.style.display = 'block'
+			}
+			if (projectsImages[counter].id === "lastSlide") {
+				nextBtn.style.display = 'none'
+			} else {
+				nextBtn.style.display = 'block'
+			}
+		})
+		// Fetch data ke file json dulu hhe ;)
+		async function fetchProject() {
+
+			const worksContainer = document.querySelector('.works__container')
+			const modalContainer = document.querySelector('#modal__container')
+			const openModal = document.getElementsByClassName('open__modal')
+			const modalTitle = document.querySelector('.modal-title')
+			const technologyTitle = document.querySelector('.technology-name')
+			const closeModal = document.querySelector('.close')
+			// const projectsSlide = docu
+
+			await fetch('projects.json').then(res => res.json()).then(data => {
+				// console.log(data)
+				let newRow = ''
+				data.data.forEach((element, index) => {
+					// console.log(element.images)
+					newRow += `
+					<div class="works__img" data-aos="fade-in" data-aos-delay="800" data-aos-duration="800">
+						<img src="https://cdn1-production-images-kly.akamaized.net/GVgUU_SxlV0i_IEMUSoZQGJTI4U=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2735401/original/083839100_1550814009-HL.jpg" alt="">
+
+						<div class="works__data open__modal" data-images="${element.images[0].ss}"
+						data-project="${element.project_name}" data-technology="${element.technology}">
+							<a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
+							<span class="works__title">${element.project_name}</span>
+						</div>
+					</div>
+					`
+				})
+				worksContainer.innerHTML = newRow
+			})
+
+			// Modal JS
+			// Tampilkan di modal
+			for (let i = 0; i < openModal.length; i++) {
+				openModal[i].addEventListener('click', () => {
+					// Event untuk menampilkan modal
+					modalContainer.classList.add('show')
+					// Buat variable
+					let projectName = openModal[i].dataset.project
+					let technologyName = openModal[i].dataset.technology
+					let images = openModal[i].dataset.images
+					
+					// for (let i = 0; i < images.split(',').length; i++) {
+					//     projectsSlide.innerHTML = `<img id="firstSlide" src="${images.split(',')[i]}" alt="">`
+					// }
+					let showSlider = ''
+					images.split(',').forEach((e, i) => {
+						// console.log(i)
+						// let slideId = ''
+						if (i == 0) {
+							slideId = 'firstSlide'
+						} 
+						else if (i == i.length - 1) {
+							slideId = 'lastSlide'
+						} 
+						showSlider += `<img id="${slideId}" src="${e}" alt="">`
+					})
+					projectsSlide.innerHTML = showSlider
+
+					// Tampilkan
+					modalTitle.innerHTML = projectName
+					technologyTitle.innerHTML = technologyName
+					
+				})
+			}
+			closeModal.addEventListener('click', () => {
+				modalContainer.classList.remove('show')
+			})
+		}
+		fetchProject()
 	 </script>
 </body>
 </html>

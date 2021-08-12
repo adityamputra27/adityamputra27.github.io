@@ -6,15 +6,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": "assets/images/covid19.jpg,assets/images/download.png"
                 }
             ],
             "technology": "HTML, CSS, Bootstrap, Laravel, Jquery",
