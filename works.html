@@ -89,6 +89,11 @@
 									<th>:</th>
 									<td><span class="technology-name"></span></td>
 								</tr>
+								<tr>
+									<th>Information</th>
+									<th>:</th>
+									<td><span class="information"></span></td>
+								</tr>
 							</table>
 						</div>
 					</div>
@@ -127,19 +132,28 @@
 			projectsSlide.style.transform = 'translateX('+ (-size * counter) +'px)'
 		})
 		projectsSlide.addEventListener('transitionend', function () {
-			console.log(projectsImages[counter].id)
-			if (projectsImages[counter].id === "firstSlide") {
+			if (counter == 0) {
 				prevBtn.style.display = 'none'
 			} else {
 				prevBtn.style.display = 'block'
 			}
-			if (projectsImages[counter].id === "lastSlide") {
+			if (counter == 2) {
 				nextBtn.style.display = 'none'
 			} else {
 				nextBtn.style.display = 'block'
 			}
+			// if (projectsImages[counter].id === "firstSlide") {
+			// 	prevBtn.style.display = 'none'
+			// } else {
+			// 	prevBtn.style.display = 'block'
+			// }
+			// if (projectsImages[counter].id === "lastSlide") {
+			// 	nextBtn.style.display = 'none'
+			// } else {
+			// 	nextBtn.style.display = 'block'
+			// }
 		})
-		// Fetch data ke file json dulu hhe ;)
+		// Fetch data ke file json dulu ;)
 		async function fetchProject() {
 
 			const worksContainer = document.querySelector('.works__container')
@@ -147,20 +161,22 @@
 			const openModal = document.getElementsByClassName('open__modal')
 			const modalTitle = document.querySelector('.modal-title')
 			const technologyTitle = document.querySelector('.technology-name')
+			const informationTitle = document.querySelector('.information')
 			const closeModal = document.querySelector('.close')
-			// const projectsSlide = docu
+			const baseImage = 'https://cdn1-production-images-kly.akamaized.net/GVgUU_SxlV0i_IEMUSoZQGJTI4U=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2735401/original/083839100_1550814009-HL.jpg,https://cdn1-production-images-kly.akamaized.net/GVgUU_SxlV0i_IEMUSoZQGJTI4U=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2735401/original/083839100_1550814009-HL.jpg,https://cdn1-production-images-kly.akamaized.net/GVgUU_SxlV0i_IEMUSoZQGJTI4U=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2735401/original/083839100_1550814009-HL.jpg'
 
 			await fetch('projects.json').then(res => res.json()).then(data => {
-				// console.log(data)
 				let newRow = ''
 				data.data.forEach((element, index) => {
-					// console.log(element.images)
+					// console.log(element.information)
+
+					let firstImage = element.images[0].ss.split(',')[0]
 					newRow += `
 					<div class="works__img" data-aos="fade-in" data-aos-delay="800" data-aos-duration="800">
-						<img src="https://cdn1-production-images-kly.akamaized.net/GVgUU_SxlV0i_IEMUSoZQGJTI4U=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2735401/original/083839100_1550814009-HL.jpg" alt="">
+						<img src="${firstImage != '' ? firstImage : 'https://cdn1-production-images-kly.akamaized.net/GVgUU_SxlV0i_IEMUSoZQGJTI4U=/640x360/smart/filters:quality(75):strip_icc():format(jpeg)/kly-media-production/medias/2735401/original/083839100_1550814009-HL.jpg'}" alt="">
 
-						<div class="works__data open__modal" data-images="${element.images[0].ss}"
-						data-project="${element.project_name}" data-technology="${element.technology}">
+						<div class="works__data open__modal" data-images="${element.images[0].ss != '' ? element.images[0].ss : baseImage}"
+						data-project="${element.project_name}" data-technology="${element.technology}" data-information="${element.information}">
 							<a href="#" class="works__link"><i class="bx bx-link-alt"></i></a>
 							<span class="works__title">${element.project_name}</span>
 						</div>
@@ -180,20 +196,20 @@
 					let projectName = openModal[i].dataset.project
 					let technologyName = openModal[i].dataset.technology
 					let images = openModal[i].dataset.images
+					let information = openModal[i].dataset.information
 					
-					// for (let i = 0; i < images.split(',').length; i++) {
-					//     projectsSlide.innerHTML = `<img id="firstSlide" src="${images.split(',')[i]}" alt="">`
-					// }
 					let showSlider = ''
 					images.split(',').forEach((e, i) => {
 						// console.log(i)
-						// let slideId = ''
 						if (i == 0) {
 							slideId = 'firstSlide'
 						} 
-						else if (i == i.length - 1) {
+						else if(i == 1) {
+							slideId = ''
+						}
+						else if(i == 2) {
 							slideId = 'lastSlide'
-						} 
+						}
 						showSlider += `<img id="${slideId}" src="${e}" alt="">`
 					})
 					projectsSlide.innerHTML = showSlider
@@ -201,7 +217,7 @@
 					// Tampilkan
 					modalTitle.innerHTML = projectName
 					technologyTitle.innerHTML = technologyName
-					
+					informationTitle.innerHTML = information
 				})
 			}
 			closeModal.addEventListener('click', () => {

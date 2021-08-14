@@ -519,6 +519,8 @@ img {
 	position: relative;
 	overflow: hidden;
 	border-radius: .5rem;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.10);
+
 }
 .works__data {
 	position: absolute;

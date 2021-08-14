@@ -6,7 +6,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/covid19.jpg,assets/images/download.png"
+                    "ss": "assets/images/covid19.jpg,assets/images/covid19 - 1.jpg,assets/images/covid19 - 2.jpg"
                 }
             ],
             "technology": "HTML, CSS, Bootstrap, Laravel, Jquery",
@@ -19,15 +19,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": "HTML, CSS, Bootstrap, Laravel, JQuery, Ajax, DOMPDF, Maatwebsite (Excel)",
@@ -40,15 +32,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": "HTML, CSS, Bootstrap, Laravel, JQuery",
@@ -61,15 +45,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": "Figma, HTML, CSS, JQuery, Laravel",
@@ -82,15 +58,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": "HTML, CSS, PHP Native",
@@ -103,15 +71,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": "Laravel, DOMPDF, Maatwebsite (Excel), AJAX, Chart JS",
@@ -124,15 +84,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": "Laravel, JQuery, AJAX, DOMPDF, Maatwebsite (Excel)",
@@ -145,15 +97,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": "HTML, CSS, Laravel, VUE JS",
@@ -166,15 +110,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": "Codeigniter, JQuery, AJAX, PHPExcel, DOMPDF",
@@ -187,15 +123,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": "HTML, CSS, Laravel, DOMPDF, Maatwebsite (Excel), JQuery, AJAX",
@@ -208,15 +136,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": "assets/images/frban-1.jpg,assets/images/frban-2.jpg,assets/images/frban-3.jpg"
                 }
             ],
             "technology": "HTML, CSS, Codeigniter, JQuery, AJAX, Chart JS, PHPExcel, DOMPDF",
@@ -229,15 +149,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": "assets/images/sirekjur-1.jpg,assets/images/sirekjur-2.jpg,assets/images/sirekjur-3.jpg"
                 }
             ],
             "technology": "Figma, HTML, CSS, Bootstrap",
@@ -250,15 +162,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": ".NET, C#, Bunifu UI Framework",
@@ -271,15 +175,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": "React JS, Typescript, Redux, Firebase, Figma, Material IO",
@@ -292,15 +188,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": "Tailwind CSS",
@@ -313,15 +201,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": "Laravel",
@@ -334,15 +214,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 2,
-                    "ss": "assets/images/"
-                },
-                {
-                    "no": 3,
-                    "ss": "assets/images/"
+                    "ss": ""
                 }
             ],
             "technology": "Microservices Architecture - NodeJS, Golang, Lumen, React JS, Typescript, Docker, Tailwind CSS, JWT, Kong API, Swagger",
