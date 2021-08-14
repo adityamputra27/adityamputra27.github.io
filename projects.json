@@ -6,7 +6,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": "assets/images/covid19.jpg,assets/images/covid19 - 1.jpg,assets/images/covid19 - 2.jpg"
+                    "ss": "assets/images/covid19-1.jpg,assets/images/covid19-2.jpg,assets/images/covid19-3.jpg"
                 }
             ],
             "technology": "HTML, CSS, Bootstrap, Laravel, Jquery",
@@ -41,11 +41,11 @@
         },
         {
             "id": 4,
-            "project_name": "Website PT. Cipta Akbar - Kontraktor dan Konsultan Baja",
+            "project_name": "Website PT. Cipta Akbar",
             "images": [
                 {
                     "no": 1,
-                    "ss": ""
+                    "ss": "assets/images/web-1.jpg,assets/images/web-2.jpg,assets/images/web-3.jpg"
                 }
             ],
             "technology": "Figma, HTML, CSS, JQuery, Laravel",
@@ -71,7 +71,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": ""
+                    "ss": "assets/images/e-voting-1.jpg,assets/images/e-voting-2.jpg,assets/images/e-voting-3.jpg"
                 }
             ],
             "technology": "Laravel, DOMPDF, Maatwebsite (Excel), AJAX, Chart JS",
@@ -110,7 +110,7 @@
             "images": [
                 {
                     "no": 1,
-                    "ss": ""
+                    "ss": "assets/images/tania-1.jpg,assets/images/tania-1.jpg,assets/images/tania-1.jpg"
                 }
             ],
             "technology": "Codeigniter, JQuery, AJAX, PHPExcel, DOMPDF",
